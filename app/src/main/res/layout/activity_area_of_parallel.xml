@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.company.AreaOfParallelActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/textViewParallel"
+        android:id="@+id/textViewParallel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/textDescripParallel_1"
+        android:id="@+id/textViewDescriptionParallel_1"
+        android:layout_below="@+id/textViewParallel"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/textInstructionParallel_1"
+        android:id="@+id/textViewInstructionParallel_1"
+        android:layout_below="@+id/textViewDescriptionParallel_1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textAnswerParall_1"
+        android:layout_below="@+id/textViewInstructionParallel_1"
+        android:layout_alignEnd="@+id/textViewParallel"
+        android:layout_alignStart="@+id/textViewParallel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/textOsnParallel_1"
+        android:id="@+id/textOsnParallel_1"
+        android:layout_below="@+id/textAnswerParall_1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="23dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/writerSklad1Parall_1"
+        android:layout_below="@+id/textOsnParallel_1"
+        android:layout_alignParentStart="true"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/textHeightParallel_1"
+        android:id="@+id/textHeightParallel_1"
+        android:layout_below="@+id/writerSklad1Parall_1"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/writerForSklad2Parall_1"
+        android:layout_below="@+id/textHeightParallel_1"
+        android:layout_alignParentStart="true"
+        android:inputType="numberDecimal" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btnAreaOfParall_1"
+        android:id="@+id/btnAreaOfParall_1"
+        android:layout_above="@+id/writerSklad1Parall_1"
+        android:layout_alignEnd="@+id/textViewInstructionParallel_1" />
+</RelativeLayout>
